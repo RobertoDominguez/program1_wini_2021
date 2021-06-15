@@ -19,7 +19,7 @@ Type
  Function Dimension : Word;
  Function ComoString : String;
  Function ElementoMayor : Integer;
- Procedure CargarNNumerosPrimos();
+ Procedure CargarNNumerosPrimos(_n:Integer);
 End;
 
 Implementation
@@ -84,11 +84,12 @@ begin
 end;
 
 
-Procedure cvector.CargarNNumerosPrimos();
+Procedure cvector.CargarNNumerosPrimos(_n:Integer);
 var
   I,primoActual: Integer;
   nn:CNumeroNatural;
 begin
+  Dimensionar(_n);
   primoActual:=0;
   nn:=CNumeroNatural.Crear;
   nn.AsignarValor(primoActual);

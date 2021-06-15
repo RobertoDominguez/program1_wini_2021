@@ -9,26 +9,20 @@ uses
   UCNumeroNatural in 'UCNumeroNatural.pas',
   UCVector in 'UCVector.pas';
 
-
 var A:CVector;
-    n,I,primoActual:Integer;
-
+    entrada,I:Integer;
 begin
   A:=CVector.Crear;
 
   writeln('Digite la dimension del vector');
-  readln(n);
+  readln(entrada);
 
-  A.Dimensionar(n);
+  A.Dimensionar(entrada);
 
-  //cargar numeros primos
-  //A.CargarNNumerosPrimos();
-  primoActual:=0;
+
+  A.CargarNNumerosPrimos();
 
   writeln(A.ComoString());
-
-
-  //writeln(v.ElementoMayor());
 
 
   readln;

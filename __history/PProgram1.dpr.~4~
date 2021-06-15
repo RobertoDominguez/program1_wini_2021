@@ -1,0 +1,46 @@
+program PProgram1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils,
+  UCNumeroNatural in 'UCNumeroNatural.pas',
+  UCVector in 'UCVector.pas';
+
+var A:CVector;
+    entrada,I,primoActual:Integer;
+    nn:CNumeroNatural;
+begin
+  A:=CVector.Crear;
+
+  writeln('Digite la dimension del vector');
+  readln(entrada);
+
+  A.Dimensionar(entrada);
+
+  primoActual:=0;
+  nn:=CNumeroNatural.Crear;
+  nn.AsignarValor(primoActual);
+  for I := 1 to A.Dimension do
+  begin
+    while (not nn.EsPrimo) do
+    begin
+      primoActual:=primoActual+1;
+      nn.AsignarValor(primoActual);
+    end;
+    A.Poner(i,primoActual);
+    primoActual:=primoActual+1;
+    nn.AsignarValor(primoActual);
+  end;
+
+  writeln(A.ComoString());
+
+  //v.CargarNNumerosPrimos(entrada);
+  //writeln(v.ElementoMayor());
+
+
+  readln;
+end.
+

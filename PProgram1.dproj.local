@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2021/06/15 01:21:41.822,E:\Universidad\Auxiliaturas\program1_wini\Proyecto\PProgram1.dproj=E:\Proyectos\radstudio\Project1.dproj</Transaction>
-    <Transaction>2021/06/15 01:22:02.655,=E:\Universidad\Auxiliaturas\program1_wini\Proyecto\UCNumeroNatural.pas</Transaction>
-    <Transaction>2021/06/15 01:22:02.666,=E:\Universidad\Auxiliaturas\program1_wini\Proyecto\UCVector.pas</Transaction>
+	<Transactions>
+    <Transaction>2021/06/15 01:21:41.000.822,E:\Proyectos\radstudio\Project1.dproj=E:\Universidad\Auxiliaturas\program1_wini\Proyecto\PProgram1.dproj</Transaction>
+    <Transaction>2021/06/15 01:22:02.000.655,=E:\Universidad\Auxiliaturas\program1_wini\Proyecto\UCNumeroNatural.pas</Transaction>
+    <Transaction>2021/06/15 01:22:02.000.666,=E:\Universidad\Auxiliaturas\program1_wini\Proyecto\UCVector.pas</Transaction>
   </Transactions>
 </BorlandProject>
